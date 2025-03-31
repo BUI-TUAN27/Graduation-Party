@@ -113,7 +113,7 @@
             let url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
             fetch(url).then(response => {
                 if (response.ok) {
-                    alert("✅ Tuấn cảm ơn bạn yêu 💛!");
+                    alert("✅ Cảm ơn bạn Yêu 💕!");
                 } else {
                     alert("❌ Có lỗi xảy ra, vui lòng thử lại.");
                 }
@@ -136,7 +136,7 @@
     </div>
     
     <audio id="bg-music" loop>
-        <source src="https://bui-tuan27.github.io/kiyeu/nhac/Wxrdie%20-%20M%E1%BB%9CI%20EM%20(ft.%20Mcee%20Blue)%20%5Bprod.%20by%20Machiot%2C%20Marlykid%5D.mp3" type="audio/mpeg">
+        <source src="https://raw.githubusercontent.com/BUI-TUAN27/kiyeu/main/nhac/Wxrdie%20-%20M%E1%BB%9CI%20EM%20(ft.%20Mcee%20Blue)%20%5Bprod.%20by%20Machiot%2C%20Marlykid%5D.mp3" type="audio/mpeg">
     </audio>
     
     <div id="invitation-card" class="card">
@@ -144,7 +144,7 @@
         <h1>🎓 Graduation Party Invitation 🎓</h1>
         <h2>Bùi Trọng Tuấn</h2>
         <p><strong>TO:</strong> <span id="guest-name"></span></p>
-        <p class="date">📅 Thời gian: :00 - Ngày 06/04/2025</p>
+        <p class="date">📅 Thời gian: 10:00 - Ngày 06/04/2025</p>
         <p class="date">📍 Địa điểm: Trường THPT Đô Lương 2</p>
         <p><em>Mong bức ảnh thanh xuân của mình có sự góp mặt của bạn!</em></p>
         <button class="btn" onclick="sendTelegramMessage()">✅ Xác nhận tham gia</button>
