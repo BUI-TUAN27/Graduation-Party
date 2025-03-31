@@ -1,17 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduation Party Invitation</title>
-    
-    <!-- Open Graph Meta Tags for Link Preview -->
-    <meta property="og:title" content="Thư Mời Kỷ Yếu 🎓">
-    <meta property="og:description" content="Bạn được mời tham gia buổi tiệc kỷ yếu! Hãy mở thư mời và xác nhận nhé!">
-    <meta property="og:image" content="https://upanh.tv/image/uQLk0s">
-    <meta property="og:url" content="https://bui-tuan27.github.io/kiyeu/">
-    <meta property="og:type" content="website">
-    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
         body {
@@ -141,6 +133,21 @@
         <img id="letter" class="letter" src="https://i.imgur.com/Q9vSDru.jpeg" alt="Thư mời tốt nghiệp">
         <br>
         <button id="open-button" class="btn" onclick="openInvitation()">📩 Mở Thư</button>
+    </div>
+    
+    <audio id="bg-music" loop>
+        <source src="https://raw.githubusercontent.com/BUI-TUAN27/kiyeu/main/nhac/Wxrdie%20-%20M%E1%BB%9CI%20EM%20(ft.%20Mcee%20Blue)%20%5Bprod.%20by%20Machiot%2C%20Marlykid%5D.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div id="invitation-card" class="card">
+        <img src="https://i.imgur.com/Q9vSDru.jpeg" alt="Ảnh tiệc tốt nghiệp">
+        <h1>🎓 Graduation Party Invitation 🎓</h1>
+        <h2>Bùi Trọng Tuấn</h2>
+        <p><strong>TO:</strong> <span id="guest-name"></span></p>
+        <p class="date">📅 Thời gian: 10:00 - Ngày 06/04/2025</p>
+        <p class="date">📍 Địa điểm: Trường THPT Đô Lương 2</p>
+        <p><em>Mong bức ảnh thanh xuân của mình có sự góp mặt của bạn!</em></p>
+        <button class="btn" onclick="sendTelegramMessage()">✅ Xác nhận tham gia</button>
     </div>
 </body>
 </html>
