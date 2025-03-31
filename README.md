@@ -84,8 +84,8 @@
     </style>
     <script>
         function getGuestName() {
-            let pathParts = window.location.pathname.split('/').filter(part => part);
-            return pathParts.length > 0 ? decodeURIComponent(pathParts[pathParts.length - 1]) : 'Khách mời';
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('name') || 'Khách mời';
         }
         
         function openInvitation() {
@@ -144,7 +144,7 @@
         <h1>🎓 Graduation Party Invitation 🎓</h1>
         <h2>Bùi Trọng Tuấn</h2>
         <p><strong>TO:</strong> <span id="guest-name"></span></p>
-        <p class="date">📅 Thời gian: 10:00 - Ngày 06/04/2025</p>
+        <p class="date">📅 Thời gian: 08:00 - Ngày 06/04/2025</p>
         <p class="date">📍 Địa điểm: Trường THPT Đô Lương 2</p>
         <p><em>Mong bức ảnh thanh xuân của mình có sự góp mặt của bạn!</em></p>
         <button class="btn" onclick="sendTelegramMessage()">✅ Xác nhận tham gia</button>
